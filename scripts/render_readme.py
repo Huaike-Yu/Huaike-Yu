@@ -57,8 +57,12 @@ def scholar_card(scholar, dark=False):
         cells.append(f'<text x="{x}" y="134" font-size="11" letter-spacing="1.3" fill="{muted}">{label}</text>')
     date = scholar.get("updated")
     foot = f"All-time metrics · checked {date}" if date else "Profile link pending · — means unverified"
+    summary = ", ".join(
+        f"{label}: {scholar['metrics'].get(key) if scholar['metrics'].get(key) is not None else 'unverified'}"
+        for key, label in labels
+    )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="460" height="195" viewBox="0 0 460 195" role="img" aria-labelledby="title desc">
-<title id="title">Google Scholar metrics</title><desc id="desc">{escape(foot)}. Citations, h-index and i10-index.</desc>
+<title id="title">Google Scholar metrics</title><desc id="desc">{escape(summary)}. {escape(foot)}.</desc>
 <rect x="0.5" y="0.5" width="459" height="194" rx="12" fill="{bg}" stroke="{line}"/>
 <g font-family="Arial,Helvetica,sans-serif"><text x="28" y="37" font-size="19" font-weight="600" fill="{accent}">Google Scholar</text>
 {''.join(cells)}
@@ -81,7 +85,7 @@ def publication(paper, scholar, own_name):
     )
     citation_url = record.get("cited_by_url")
     citation_label = f'<a href="{escape(citation_url, quote=True)}">Cited by {citation}</a>' if citation_url else f"Citations: {citation}"
-    search = scholar_search(paper["title"])
+    search = record.get("source_url") or scholar_search(paper["title"])
     venue = paper["venue"]
     return f'''<p>
   <strong><a href="{escape(paper['url'], quote=True)}">{escape(paper['title'])}</a></strong><br>
@@ -118,7 +122,11 @@ def main():
     for paper in profile["publications"]:
         coauthors.update(name for name in dict.fromkeys(paper["authors"]) if name != profile["name"])
     frequent = coauthors.most_common(8)
-    coauthor_rows = "\n".join(f"| {name} | {count} |" for name, count in frequent)
+    coauthor_links = scholar.get("coauthors", {})
+    coauthor_rows = "\n".join(
+        f"| [{name}]({coauthor_links[name]}) | {count} |" if name in coauthor_links else f"| {name} | {count} |"
+        for name, count in frequent
+    )
     remaining = " · ".join(name for name, _ in coauthors.most_common()[8:])
     education = "\n".join(f"- **{item['institution']}** — {item['degree']} ({item['period']})." for item in profile["education"])
 
@@ -129,12 +137,16 @@ def main():
     })
     dark_stats = stats.replace("7a69ae", "b4a2ed").replace("526580", "a9b9d4").replace("f7f8fc", "101827").replace("d8e1ef", "2e3f58")
     scholar_url = scholar.get("profile_url") or scholar_search()
-    scholar_picture = picture("./assets/scholar-light.svg", "./assets/scholar-dark.svg", "Google Scholar citation metrics; unverified values are shown as dashes", 460)
+    scholar_alt = "Google Scholar: " + ", ".join(
+        f"{label} {scholar['metrics'].get(key) if scholar['metrics'].get(key) is not None else 'unverified'}"
+        for key, label in [("citations", "citations"), ("h_index", "h-index"), ("i10_index", "i10-index")]
+    )
+    scholar_picture = picture("./assets/scholar-light.svg", "./assets/scholar-dark.svg", scholar_alt, 460)
     stats_picture = picture(stats, dark_stats, "Huaike-Yu's GitHub activity: stars, commits, pull requests and issues", 400)
     if scholar.get("profile_url"):
         scholar_picture = f'<a href="{escape(scholar_url, quote=True)}">{scholar_picture}</a>'
     scholar_note = (
-        f"Google Scholar all-time metrics and paper counts checked {scholar['updated']}."
+        f"Google Scholar snapshot · checked {scholar['updated']} · citation counts may change."
         if scholar.get("updated") else
         "Google Scholar profile link is being confirmed; unverified citation metrics are shown as —."
     )

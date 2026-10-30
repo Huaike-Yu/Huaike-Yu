@@ -9,7 +9,7 @@
 
 <p>
   <a href="https://huaike-yu.github.io/"><img src="./assets/homepage.svg" alt="Academic homepage" height="28"></a>
-  <a href="https://scholar.google.com/citations?view_op=search_authors&amp;mauthors=Huaike+Yu&amp;hl=en"><img src="./assets/scholar.svg" alt="Google Scholar author search" height="28"></a>
+  <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=GN3ipIUAAAAJ"><img src="./assets/scholar.svg" alt="Google Scholar profile" height="28"></a>
   <a href="https://huaike-yu.github.io/assets/Huaike_Yu_CV.pdf"><img src="./assets/cv.svg" alt="Curriculum vitae" height="28"></a>
   <a href="#research-by-topic"><img src="./assets/publications.svg" alt="Research by topic" height="28"></a>
 </p>
@@ -23,13 +23,13 @@ My research focuses on **invisible image watermarking**, **steganography**, and 
 
 ## Research overview
 
-<picture>
+<a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=GN3ipIUAAAAJ"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/scholar-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/scholar-light.svg">
-    <img alt="Google Scholar citation metrics; unverified values are shown as dashes" src="./assets/scholar-light.svg" width="460">
-  </picture>
+    <img alt="Google Scholar: citations 8, h-index 1, i10-index 0" src="./assets/scholar-light.svg" width="460">
+  </picture></a>
 
-<sub>Google Scholar profile link is being confirmed; unverified citation metrics are shown as —. The six works below include five preprints and one published article.</sub>
+<sub>Google Scholar snapshot · checked 2026-10-30 · citation counts may change. The six works below include five preprints and one published article.</sub>
 
 ## Research by topic
 
@@ -38,25 +38,25 @@ My research focuses on **invisible image watermarking**, **steganography**, and 
 <p>
   <strong><a href="https://arxiv.org/abs/2609.31722">Where Does the Watermark Hide? Push-Pull Disentanglement for Invisible Watermark Removal</a></strong><br>
   <sub>J. Yang, <strong>Huaike Yu</strong>, Q. Li, C. Wang, Y. Miao, S. Gao, X. Chen</sub><br>
-  <sub>2026 · Preprint · arXiv:2609.31722 &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22Where+Does+the+Watermark+Hide%3F+Push-Pull+Disentanglement+for+Invisible+Watermark+Removal%22">Scholar</a></sub>
+  <sub>2026 · Preprint · arXiv:2609.31722 &nbsp; / &nbsp; Citations: 0 · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:qjMakFHDy7sC">Scholar</a></sub>
 </p>
 
 <p>
   <strong><a href="https://arxiv.org/abs/2609.01249">One Prompt Is Enough: Watermark Laundering Through Foundation Image Models</a></strong><br>
   <sub>J. Yang, Q. Li, W. Zong, Y. Chow, W. Susilo, <strong>Huaike Yu</strong>, C. Wang, S. Gao</sub><br>
-  <sub>2026 · Preprint · arXiv:2609.01249 &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22One+Prompt+Is+Enough%3A+Watermark+Laundering+Through+Foundation+Image+Models%22">Scholar</a></sub>
+  <sub>2026 · Preprint · arXiv:2609.01249 &nbsp; / &nbsp; <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=zh-CN&amp;cites=15203792726869083218">Cited by 1</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:u5HHmVD_uO8C">Scholar</a></sub>
 </p>
 
 <p>
   <strong><a href="https://arxiv.org/abs/2609.31693">Disentangle and Drop: Robust Universal Removal of Image Watermarks via Reconstructive Grayscale Residual Decomposition</a></strong><br>
   <sub>Q. Li, J. Yang, F. Fan, Y. Miao, X. Chen, <strong>Huaike Yu</strong>, C. Wang, S. Gao, H. H. Iu, B. Ma</sub><br>
-  <sub>2026 · Preprint · arXiv:2609.31693 &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22Disentangle+and+Drop%3A+Robust+Universal+Removal+of+Image+Watermarks+via+Reconstructive+Grayscale+Residual+Decomposition%22">Scholar</a></sub>
+  <sub>2026 · Preprint · arXiv:2609.31693 &nbsp; / &nbsp; Citations: 0 · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:2osOgNQ5qMEC">Scholar</a></sub>
 </p>
 
 <p>
   <strong><a href="https://www.preprints.org/manuscript/202609.1697">Invisible Image Watermark Attacks: A Survey</a></strong><br>
   <sub>J. Yang, Q. Li, <strong>Huaike Yu</strong>, X. Wang, C. Wang, B. Ma, S. Gao, J. Wang, X. Li</sub><br>
-  <sub>2026 · Preprint · Preprints.org &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22Invisible+Image+Watermark+Attacks%3A+A+Survey%22">Scholar</a></sub>
+  <sub>2026 · Preprint · Preprints.org &nbsp; / &nbsp; Citations: 0 · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:d1gkVwhDpl0C">Scholar</a></sub>
 </p>
 
 ### Steganography
@@ -64,7 +64,7 @@ My research focuses on **invisible image watermarking**, **steganography**, and 
 <p>
   <strong><a href="https://arxiv.org/abs/2609.22392">Style as Cover: Deep Image Steganography via Stylized Transmission</a></strong><br>
   <sub>Q. Li, J. Yang, <strong>Huaike Yu</strong>, C. Wang, S. Gao, H. H. Iu, Y. Miao, B. Ma, X. Chen</sub><br>
-  <sub>2026 · Preprint · arXiv:2609.22392 &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22Style+as+Cover%3A+Deep+Image+Steganography+via+Stylized+Transmission%22">Scholar</a></sub>
+  <sub>2026 · Preprint · arXiv:2609.22392 &nbsp; / &nbsp; Citations: 0 · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:9yKSN-GCB0IC">Scholar</a></sub>
 </p>
 
 ### Large language model security
@@ -72,7 +72,7 @@ My research focuses on **invisible image watermarking**, **steganography**, and 
 <p>
   <strong><a href="https://doi.org/10.54254/2755-2721/93/20240922">Research on adversarial attack and defense of large language models</a></strong><br>
   <sub>J. Yang, Q. Chi, W. Xu, <strong>Huaike Yu</strong></sub><br>
-  <sub>2024 · Published Article · Applied and Computational Engineering 93 (1), 105–113 &nbsp; / &nbsp; Citations: — · <a href="https://scholar.google.com/scholar?q=%22Research+on+adversarial+attack+and+defense+of+large+language+models%22">Scholar</a></sub>
+  <sub>2024 · Published Article · Applied and Computational Engineering 93 (1), 105–113 &nbsp; / &nbsp; <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=zh-CN&amp;cites=3096555243794647317">Cited by 7</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=GN3ipIUAAAAJ&amp;citation_for_view=GN3ipIUAAAAJ:u-x6o8ySG0sC">Scholar</a></sub>
 </p>
 
 ## Collaborators
@@ -81,10 +81,10 @@ Coauthorship across the **6 works listed here** · **17 collaborators**.
 
 | Frequent coauthor | Shared works |
 | :-- | --: |
-| Jidong Yang | 6 |
-| Qi Li | 5 |
-| Chunpeng Wang | 5 |
-| Suo Gao | 5 |
+| [Jidong Yang](https://scholar.google.com/citations?user=WyLuUBwAAAAJ&hl=zh-CN) | 6 |
+| [Qi Li](https://scholar.google.com/citations?user=hADn5wwAAAAJ&hl=zh-CN) | 5 |
+| [Chunpeng Wang](https://scholar.google.com/citations?user=Ngnu9O0AAAAJ&hl=zh-CN) | 5 |
+| [Suo Gao](https://scholar.google.com/citations?user=r97kVgoAAAAJ&hl=zh-CN) | 5 |
 | Yuantian Miao | 3 |
 | Xiao Chen | 3 |
 | Bin Ma | 3 |
@@ -134,4 +134,4 @@ Master’s Degree in **Simulation and Immersive Technologies**, **UNSW** (Februa
 
 ---
 
-[Academic homepage](https://huaike-yu.github.io/) &nbsp; · &nbsp; [Google Scholar](https://scholar.google.com/citations?view_op=search_authors&mauthors=Huaike+Yu&hl=en) &nbsp; · &nbsp; [CV](https://huaike-yu.github.io/assets/Huaike_Yu_CV.pdf)
+[Academic homepage](https://huaike-yu.github.io/) &nbsp; · &nbsp; [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=GN3ipIUAAAAJ) &nbsp; · &nbsp; [CV](https://huaike-yu.github.io/assets/Huaike_Yu_CV.pdf)
