@@ -20,6 +20,8 @@ Scholar scraping is configured. The profile navigation and metric card link to
 [Huaike Yu's confirmed profile](https://scholar.google.com/citations?hl=zh-CN&user=GN3ipIUAAAAJ).
 Individual paper links open their Scholar records; positive counts link directly
 to the citing papers.
+Generated metric images use a content hash in their filenames, so a changed
+snapshot receives a fresh image URL instead of reusing GitHub's cached image.
 
 The 2026-10-30 snapshot contains all six rows shown in this profile: 8 citations,
 h-index 1 and i10-index 0. The LLM-security article has 7 citations and One Prompt

@@ -1,6 +1,7 @@
 """Render the academic profile from public, explicitly sourced data (Python 3.10+)."""
 
 from collections import Counter
+from hashlib import sha256
 from html import escape
 from pathlib import Path
 from urllib.parse import urlencode
@@ -110,8 +111,14 @@ def main():
     grouped_ids = [key for _, keys in GROUPS for key in keys]
     assert len(grouped_ids) == len(set(grouped_ids)) and set(grouped_ids) == set(papers)
 
+    scholar_assets = {}
     for dark in (False, True):
-        write(ASSETS / f"scholar-{'dark' if dark else 'light'}.svg", scholar_card(scholar, dark))
+        theme = 'dark' if dark else 'light'
+        svg = scholar_card(scholar, dark)
+        version = sha256(svg.encode('utf-8')).hexdigest()[:10]
+        filename = f"scholar-{theme}-{version}.svg"
+        write(ASSETS / filename, svg)
+        scholar_assets[theme] = f"./assets/{filename}"
     write(ASSETS / "scholar.svg", '''<svg xmlns="http://www.w3.org/2000/svg" width="145" height="30" viewBox="0 0 145 30" role="img" aria-label="Google Scholar"><rect x=".5" y=".5" width="144" height="29" rx="5" fill="#17243c" stroke="#43526c"/><path d="m10 12 8-5 8 5-8 5Zm3 3v5c3 2 7 2 10 0v-5M26 12v8" fill="none" stroke="#c6b6f2" stroke-width="1.4" stroke-linejoin="round"/><text x="35" y="19.5" fill="#f2f5fc" font-family="Arial,Helvetica,sans-serif" font-size="12.5">Google Scholar</text></svg>''')
 
     sections = []
@@ -141,7 +148,7 @@ def main():
         f"{label} {scholar['metrics'].get(key) if scholar['metrics'].get(key) is not None else 'unverified'}"
         for key, label in [("citations", "citations"), ("h_index", "h-index"), ("i10_index", "i10-index")]
     )
-    scholar_picture = picture("./assets/scholar-light.svg", "./assets/scholar-dark.svg", scholar_alt, 460)
+    scholar_picture = picture(scholar_assets["light"], scholar_assets["dark"], scholar_alt, 460)
     stats_picture = picture(stats, dark_stats, "Huaike-Yu's GitHub activity: stars, commits, pull requests and issues", 400)
     if scholar.get("profile_url"):
         scholar_picture = f'<a href="{escape(scholar_url, quote=True)}">{scholar_picture}</a>'

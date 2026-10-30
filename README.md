@@ -24,9 +24,9 @@ My research focuses on **invisible image watermarking**, **steganography**, and 
 ## Research overview
 
 <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=GN3ipIUAAAAJ"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/scholar-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/scholar-light.svg">
-    <img alt="Google Scholar: citations 8, h-index 1, i10-index 0" src="./assets/scholar-light.svg" width="460">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/scholar-dark-3188384831.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/scholar-light-460ebfe0a2.svg">
+    <img alt="Google Scholar: citations 8, h-index 1, i10-index 0" src="./assets/scholar-light-460ebfe0a2.svg" width="460">
   </picture></a>
 
 <sub>Google Scholar snapshot · checked 2026-10-30 · citation counts may change. The six works below include five preprints and one published article.</sub>
