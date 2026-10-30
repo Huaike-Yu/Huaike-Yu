@@ -1,0 +1,181 @@
+{
+  "name": "Huaike Yu",
+  "email": "huaike.yu@unswalumni.com",
+  "role": "Research Assistant",
+  "institution": "Qilu University of Technology (Shandong Academy of Sciences)",
+  "guidance": "Qi Li",
+  "education": [
+    {
+      "id": "unsw",
+      "institution": "University of New South Wales (UNSW)",
+      "degree": "Master’s Degree in Simulation and Immersive Technologies",
+      "period": "February 2024 – August 2025",
+      "tags": [
+        "Master’s Degree",
+        "Immersive Technologies"
+      ],
+      "icon": "🎓"
+    },
+    {
+      "id": "newcastle",
+      "institution": "University of Newcastle",
+      "degree": "Bachelor’s Degree in International Business",
+      "period": "July 2022 – June 2023",
+      "tags": [
+        "Bachelor’s Degree",
+        "International Business"
+      ],
+      "icon": "🌏"
+    },
+    {
+      "id": "sisu",
+      "institution": "Sichuan International Studies University",
+      "degree": "Bachelor’s Degree in Business English",
+      "period": "September 2019 – June 2023",
+      "tags": [
+        "Bachelor’s Degree",
+        "Business English"
+      ],
+      "icon": "📚"
+    }
+  ],
+  "publications": [
+    {
+      "id": "push-pull",
+      "title": "Where Does the Watermark Hide? Push-Pull Disentanglement for Invisible Watermark Removal",
+      "authors": [
+        "Jidong Yang",
+        "Huaike Yu",
+        "Qi Li",
+        "Chunpeng Wang",
+        "Yuantian Miao",
+        "Suo Gao",
+        "Xiao Chen"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2609.31722",
+      "status": "Preprint",
+      "url": "https://arxiv.org/abs/2609.31722",
+      "tags": [
+        "Watermark Removal",
+        "Disentanglement"
+      ],
+      "icon": "🧩"
+    },
+    {
+      "id": "survey",
+      "title": "Invisible Image Watermark Attacks: A Survey",
+      "authors": [
+        "Jidong Yang",
+        "Qi Li",
+        "Huaike Yu",
+        "Xiaoyu Wang",
+        "Chunpeng Wang",
+        "Bin Ma",
+        "Suo Gao",
+        "Jinwei Wang",
+        "Xiaolong Li"
+      ],
+      "year": 2026,
+      "venue": "Preprints.org",
+      "status": "Preprint",
+      "url": "https://www.preprints.org/manuscript/202609.1697",
+      "tags": [
+        "Watermark Attacks",
+        "Survey"
+      ],
+      "icon": "📖"
+    },
+    {
+      "id": "disentangle-drop",
+      "title": "Disentangle and Drop: Robust Universal Removal of Image Watermarks via Reconstructive Grayscale Residual Decomposition",
+      "authors": [
+        "Qi Li",
+        "Jidong Yang",
+        "Feng-Lei Fan",
+        "Yuantian Miao",
+        "Xiao Chen",
+        "Huaike Yu",
+        "Chunpeng Wang",
+        "Suo Gao",
+        "Herbert Ho-Ching Iu",
+        "Bin Ma"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2609.31693",
+      "status": "Preprint",
+      "url": "https://arxiv.org/abs/2609.31693",
+      "tags": [
+        "Watermark Removal",
+        "Residual Decomposition"
+      ],
+      "icon": "🔬"
+    },
+    {
+      "id": "style-cover",
+      "title": "Style as Cover: Deep Image Steganography via Stylized Transmission",
+      "authors": [
+        "Qi Li",
+        "Jidong Yang",
+        "Huaike Yu",
+        "Chunpeng Wang",
+        "Suo Gao",
+        "Herbert Ho-Ching Iu",
+        "Yuantian Miao",
+        "Bin Ma",
+        "Xiao Chen"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2609.22392",
+      "status": "Preprint",
+      "url": "https://arxiv.org/abs/2609.22392",
+      "tags": [
+        "Steganography",
+        "Stylized Transmission"
+      ],
+      "icon": "🎨"
+    },
+    {
+      "id": "one-prompt",
+      "title": "One Prompt Is Enough: Watermark Laundering Through Foundation Image Models",
+      "authors": [
+        "Jidong Yang",
+        "Qi Li",
+        "Wei Zong",
+        "Yang-Wai Chow",
+        "Willy Susilo",
+        "Huaike Yu",
+        "Chunpeng Wang",
+        "Suo Gao"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2609.01249",
+      "status": "Preprint",
+      "url": "https://arxiv.org/abs/2609.01249",
+      "tags": [
+        "Watermark Laundering",
+        "Foundation Models"
+      ],
+      "icon": "✨"
+    },
+    {
+      "id": "llm-security",
+      "title": "Research on adversarial attack and defense of large language models",
+      "authors": [
+        "Jidong Yang",
+        "Qiangyun Chi",
+        "Wenqiang Xu",
+        "Huaike Yu"
+      ],
+      "year": 2024,
+      "venue": "Applied and Computational Engineering 93 (1), 105–113",
+      "status": "Published Article",
+      "url": "https://doi.org/10.54254/2755-2721/93/20240922",
+      "tags": [
+        "LLM Security",
+        "Adversarial Attacks"
+      ],
+      "icon": "🛡️"
+    }
+  ]
+}
